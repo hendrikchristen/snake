@@ -415,7 +415,7 @@
     ctx.fillRect(cx + fx + px - e / 2, cy + fy + py - e / 2, e, e);
     ctx.fillRect(cx + fx - px - e / 2, cy + fy - py - e / 2, e, e);
 
-    if (food && (state !== "running" || Math.floor(t / 400) % 4 !== 3)) {
+    if (food) {
       ctx.fillStyle = PIXEL;
       const q = c / 3;
       const fx0 = food.x * c, fy0 = food.y * c;

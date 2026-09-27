@@ -2,6 +2,8 @@
 
 Klassisches Snake im Look eines alten Handy-Displays, gebaut mit Next.js und TypeScript.
 
+**[Jetzt spielen: snake-mauve-delta.vercel.app](https://snake-mauve-delta.vercel.app)**
+
 ## Steuerung
 
 | | Tastatur | Handy |

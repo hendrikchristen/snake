@@ -10,7 +10,8 @@ Snake als Next.js-Web-App. Übungsprojekt, um den Workflow (Plan → Branch → 
 
 - Oberfläche, Kommentare und Commit-Nachrichten auf **Deutsch**.
 - GitHub: https://github.com/hendrikchristen/snake. Neue Arbeit auf einem eigenen Branch, dann Pull Request nach `main`.
-- Hosting: Vercel (baut `main` als Live-Version und jeden Pull Request als Vorschau).
+- Hosting: Vercel. `main` ist live unter https://snake-mauve-delta.vercel.app, jeder Pull Request bekommt eine eigene Vorschau (nur mit Vercel-Login sichtbar). Framework ist in `vercel.json` festgelegt, weil das Projekt ursprünglich als statische Seite importiert wurde.
+- GitHub Pages ist abgeschaltet.
 - Das Artifact https://claude.ai/artifact/Vfs1j9uerXMxmAjgjTzPXQ ist die alte Einzeldatei-Version und wird nicht mehr aktualisiert.
 
 ## Befehle

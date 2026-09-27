@@ -1,0 +1,71 @@
+:root {
+  --ground: #e6e8e1;
+  --ink: #23291d;
+  --muted: #646b5a;
+  --bezel: #2e3329;
+  --bezel-edge: #1c2018;
+  --lcd: #b9c49a;
+  --lcd-ink: #26301b;
+  --key: #d4d8cb;
+  --key-ink: #2e3329;
+  --focus: #6f8a2e;
+  /* Schriften kommen aus next/font (siehe layout.tsx) */
+  --display: var(--font-silkscreen), "Courier New", monospace;
+  --digits: var(--font-vt323), "Courier New", monospace;
+  --body: var(--font-karla), system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ground: #15180f;
+    --ink: #dfe4d2;
+    --muted: #939b84;
+    --bezel: #0a0c07;
+    --bezel-edge: #30362a;
+    --key: #2a2f24;
+    --key-ink: #dfe4d2;
+    --focus: #a9c46a;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ground: #15180f;
+  --ink: #dfe4d2;
+  --muted: #939b84;
+  --bezel: #0a0c07;
+  --bezel-edge: #30362a;
+  --key: #2a2f24;
+  --key-ink: #dfe4d2;
+  --focus: #a9c46a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 15px;
+  padding-inline: 16px;
+  padding-block: 20px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}

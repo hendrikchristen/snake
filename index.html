@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Snake</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,8 +48,10 @@
     --focus: #a9c46a;
   }
 
+  [hidden] { display: none !important; }
   html, body { height: 100%; }
   body {
+    margin: 0;
     background: var(--ground);
     color: var(--ink);
     font-family: var(--body);
@@ -217,6 +224,8 @@
 
   button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 </style>
+</head>
+<body>
 
 <div class="wrap">
   <header>
@@ -493,3 +502,5 @@
   requestAnimationFrame(frame);
 })();
 </script>
+</body>
+</html>
